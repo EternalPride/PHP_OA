@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="__CSS__/base.css" />
+<link rel="stylesheet" href="__CSS__/info-reg.css" />
+<title>移动办公自动化系统</title>
+</head>
+
+<body>
+<div class="title"><h2>信息登记</h2></div>
+<form method="post" action="{:url('lsk/Dept/add')}">
+<div class="main"> 
+     
+    
+    <div class="short-input select ue-clear">
+    	<label>上级部门：</label>
+        <div class="select-wrap">
+            <select name="d_pid">
+                <option value="0">顶级部门</option>
+              {volist name='data' id='dept'}
+                    <option value="{$dept['dept_id']}">{$dept.level|str_repeat='+++',###}{$dept.dept_name}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+    
+    
+    <p class="short-input ue-clear">
+    	<label>部门名称：</label>
+        <input type="text" name="d_name" />
+    </p>
+    <p class="short-input ue-clear">
+    	<label>备注：</label>
+        <textarea placeholder="请输入内容" name="d_desc"></textarea>
+    </p>
+</div>
+<div class="btn ue-clear">
+	<a href="javascript:;" class="confirm">确定</a>
+    <a href="javascript:;" class="clear">清空内容</a>
+</div>
+</form>
+</body>
+<script type="text/javascript" src="__JS__/jquery.js"></script>
+<script type="text/javascript" src="__JS__/common.js"></script>
+<script type="text/javascript" src="__JS__/js/WdatePicker.js"></script>
+<script type="text/javascript">
+$(".select-title").on("click",function(){
+	$(".select-list").toggle();
+	return false;
+});
+$(".select-list").on("click","li",function(){
+	var txt = $(this).text();
+	$(".select-title").find("span").text(txt);
+});
+
+$(".confirm").on("click",function(){
+    $('form').submit();
+});
+showRemind('input[type=text], textarea','placeholder');
+</script>
+</html>
