@@ -3,16 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/2/application/hr/model/User.php</file>
-            <file>file:/C:/wamp/www/2/public/index.php</file>
-            <file>file:/C:/wamp/www/2/application/hr/view/Dept/add.html</file>
-            <file>file:/C:/wamp/www/2/public/static/js/jquery.pagination.js</file>
-            <file>file:/C:/wamp/www/2/application/hr/view/User/index.html</file>
-            <file>file:/C:/wamp/www/2/application/hr/view/User/add.html</file>
-            <file>file:/C:/wamp/www/2/application/hr/controller/DeptController.php</file>
-            <file>file:/C:/wamp/www/2/application/hr/controller/UserController.php</file>
-            <file>file:/C:/wamp/www/2/application/hr/controller/ValidateController.php</file>
-            <file>file:/C:/wamp/www/2/application/hr/model/Dept.php</file>
+            <file>file:/C:/wamp/www/PHP_OA/application/hr/view/Login/login.html</file>
+            <file>file:/C:/wamp/www/PHP_OA/public/index.php</file>
+            <file>file:/C:/wamp/www/PHP_OA/application/hr/controller/LoginController.php</file>
+            <file>file:/C:/wamp/www/PHP_OA/application/config.php</file>
         </group>
     </open-files>
 </project-private>

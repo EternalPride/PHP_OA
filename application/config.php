@@ -54,13 +54,13 @@ return [
     // +----------------------------------------------------------------------
 
     // 默认模块名
-    'default_module'         => 'lsk',
+    'default_module'         => 'hr',
     // 禁止访问模块
     'deny_module_list'       => ['common'],
     // 默认控制器名
-    'default_controller'     => 'dept',
+    'default_controller'     => 'login',
     // 默认操作名
-    'default_action'         => 'index',
+    'default_action'         => 'login',
     // 默认验证器
     'default_validate'       => '',
     // 默认的空控制器名
